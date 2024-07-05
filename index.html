@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Desencriptador</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CHALLENGE - Encriptador de Texto</h1>
+        <div class="main-content">
+
+            <!-- Sección del Input Text -->
+            <div class="input-section">
+                <textarea id="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="mensaje">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <!-- Botones para encriptar y desencriptar -->
+                <div class="buttons">
+                    <button class="btn btn-encriptar" onclick="encriptacion()">Encriptar</button>
+                    <button class="btn btn-desencriptar" onclick="desencriptacion()">Desencriptar</button>
+                </div>
+            </div>
+
+            <!-- Sección del Output Text -->
+            <div class="output-section" id="output-section">
+                <div class="output-content" id="output-content">
+                    <img src="img/imagen.png" alt="imagen" id="placeholder">
+                    <p class="mensajeUno">Ningún mensaje fue encontrado</p>
+                    <p class="mensajeDos">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <textarea id="output-text" readonly></textarea>
+
+                <!-- Botón para copiar el texto encriptado o desencriptado -->
+                <div class="buttons">
+                    <button class="btn btn-encriptar" id="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información del desarrollador -->
+        <footer>
+            <p>Desarrollado por Alexis Ugalde Sepúlveda - 2024</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
